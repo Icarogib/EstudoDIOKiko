@@ -1,0 +1,66 @@
+Comandos prompt:
+
+ls ou dir - mostram as pastas e arquivos no diretório atual
+cd .. - volta o diretorio anterior
+cd /NomeDaPasta - entra em tal pasta
+cat (arquivo) - visualiza o arquivo pelo prompt
+pwd - olha o caminho para seu diretório atual.
+mkdir NomePasta - cria uma nova pasta com o nome
+mv NomeArquivo ./NomePasta/ - move um arquivo para tal pasta.
+echo > NomeArquivo.tipo - cria um arquivo de determinado tipo.
+
+*Criar um token de acesso, e uma chave SSH pode ajudar na segurança!
+
+Para criar a chave ssh, se utiliza o comando:
+
+$  ssh-keygen -t ed25519 -c (email do usuario)
+(ed25519 é o tipo de criptografia da chave.)
+
+$  eval $(ssh-agent -s)
+(isso inicia o agente SSH para rodar no seu PC)
+
+$  ssh-add *nome da chave* 
+(**guardada no diretório guardado do .ssh, em usuarios/SeuUser/.ssh)
+
+
+(Dicas, git *comando* help mostra mais opções dos comandos!)
+
+Comandos mais utilizados no GIT:
+	-> Configuração:
+
+$  git config --global user.email "SeuEmail" - seta seu email.	
+$  git config --global user.name "SeuNome" (de preferencia o do github) - seta nome
+$  git config --list - mostra todas config.
+$  git config --global --unset user.email
+$  git config --global --unset user.name
+
+	-> Repositórios e outros:
+
+$  git clone (link https ou ssh) - Clona o repositório para sua máquina
+
+$  git init - Inicia um repositório no seu diretório.
+
+$  git add (* ; . ; -A ; -u; nomeArquivo) - adiciona o selecionado ao commit:
+* ou A - tudo; . - tudo incluindo arquivos com . no inicio; u - apenas modificados;
+
+$  git commit -m "AnotacaoDoCommit" - commit salva tudo, -m passa uma mensagem.
+
+$  git status - mostra a situação do commit, status dos arquivos em geral.
+
+$  git remote add origin linkGitHub - coloca o repositório que vamos alterar.
+(git remote help mostra mais comandos)
+
+$  git remote -v - mostra onde seu GIT atual está apontando (repositório remoto).
+
+$  git push origin master/main - envia seu repositório local para o repositório remoto.
+
+$  git restore nomeArquivo - Discarta modificacoes antes de ir ao staged area.
+
+$  git restore --staged nomeArquivo - remove da staged area (a area antes do commit).
+
+$  git pull origin master/main - Quando há problemas de merging (diferentes modificações 
+					no mesmo arquivo) ele pega os dois arquivos e coloca
+					 em um, para o usuario modificar qual quer colocar.
+					(<<<HEAD é o inicio de sua parte que esta diferente,
+					 ====== é onde a do outro arquivo é diferente).
+
