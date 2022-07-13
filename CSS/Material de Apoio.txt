@@ -176,4 +176,36 @@ O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de me
 font-style
 Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor italic para ele, mas se precisar tirar o itálico de um texto você pode usar o valor normal.
 
+ =========================
+ Modificação pelo aluno:
  
+ 
+ Estilizando textos:
+ 
+ text-transform
+ transforma o texto em uppercase, lowercase ou outros.
+ 
+ text-decoration
+ overline, underline, line-through, none.
+ 
+ 
+ Estilização de Listas:
+ 
+ list-style-type
+ Mudanças do simbolo que aparece na contagem, algarismo romano, um quadrado, etc. (upper-roman, square ou codigos como o joinha, carinha feliz ou outros).
+ 
+ list-style-image
+ url de imagem.
+ 
+ 
+ Dimensão e alinhamento:
+ 
+ Width, pode ser 100%, assim ele adere as dimensões sozinho, ou colocar manualmente os pixels junto com o height.
+ Height
+ 
+ Max-Width, a tela se adapta, no máximo X pixels, mas se for menos, ela se adapta.
+ Max-Height
+ 
+ Margin, coloca uma margem sozinho, para se adequar a cada monitor.
+ 
+ Text align, alinhamento do texto, centro, esquerda, direita.
