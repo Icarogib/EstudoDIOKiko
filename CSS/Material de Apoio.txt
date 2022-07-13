@@ -209,3 +209,10 @@ Usamos o font-style para tornar um texto itálico, na maioria das vezes você us
  Margin, coloca uma margem sozinho, para se adequar a cada monitor.
  
  Text align, alinhamento do texto, centro, esquerda, direita.
+
+Para centralizar uma imagem, se utiliza no css:
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
