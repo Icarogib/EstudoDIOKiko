@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: orange;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .flex-center{
+            justify-content: center;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+        
+        .space-evenly{
+            justify-content: space-evenly;
+        }
+        
+        .space-around{
+            justify-content: space-around;
+        }
+
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>row</h1>
+        <p>flex start</p>
+        <div class="container flex-start">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex end</p>
+        <div class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex center</p>
+        <div class="container flex-center">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-between</p>
+        <div class="container space-between">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-around</p>
+        <div class="container space-around">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-evenly</p>
+        <div class="container space-evenly">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+       
+       
+        <h1> column</h1>
+        <p>flex start</p>
+        <div class="container flex-start column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex end</p>
+        <div class="container flex-end column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex center</p>
+        <div class="container flex-center column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-between</p>
+        <div class="container space-between column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-around</p>
+        <div class="container space-around column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+        <p>flex space-evenly</p>
+        <div class="container space-evenly column">
+            <div class="item">1</div>
+            <div class="item">2 item</div>
+            <div class="item">mais um item</div>
+        </div>
+    </section>
+</body>
+</html>
