@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            margin:0;
+        }
+
+        .item{
+            background-color: orange;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .bauto{
+            flex-basis: auto;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+        
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>auto</p>
+        <div class="container">
+            <div class="item bauto fg-1">A</div>
+            <div class="item bauto fg-1">BBB</div>
+            <div class="item bauto fg-1">CC</div>
+            <div class="item bauto fg-2">D</div>
+        </div>
+
+        <p>zero</p>
+        <div class="container">
+            <div class="item b-0 fg-1">A</div>
+            <div class="item b-0 fg-1">BBB</div>
+            <div class="item b-0 fg-1">CC</div>
+            <div class="item b-0 fg-1">D</div>
+        </div>
+        
+        <p>basis + width</p>
+        <div class="container">
+            <div class="item w100 fg-2">A</div>
+            <div class="item w100 fg-2">BBB</div>
+            <div class="item w100 fg-2">CC</div>
+            <div class="item w100 fg-2">D</div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Utilizar o live server preview no VSCode ou outra ide!!

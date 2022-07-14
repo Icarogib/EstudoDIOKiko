@@ -28,21 +28,110 @@
         .stretch{
             align-items: stretch;
         }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item{
+            flex:0;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
     <section>
+        <h1>Row</h1>
         <p>center</p>
         <div class="container center">
             <div class="item">1</div>
-            <div class="item">2fadfeawe</div>
-            <div class="item">teste123214gasfgasfgafsgafdg3123513451453214175478367</div>
+            <div class="item">Mais texto aqui do meio do negocio</div>
+            <div class="item">teste</div>
         </div>
         <p>stretch</p>
         <div class="container stretch">
             <div class="item">1</div>
-            <div class="item">2</div>
+            <div class="item">teste 1 para ver se o resto cresce de acordo com o do meio</div>
             <div class="item">3</div>
+        </div>
+
+        <p>flex-start</p>
+        <div class="container start">
+            <div class="item">1</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+        </div>
+
+        <p>flex-end</p>
+        <div class="container end">
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">3</div>
+        </div>
+        <p>baseline</p>
+        <div class="container baseline">
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">3</div>
+        </div>
+
+        <h1>column</h1>
+        <p>center</p>
+        <div class="container center column">
+            <div class="item">1</div>
+            <div class="item">Mais texto aqui do meio do negocio</div>
+            <div class="item">teste</div>
+        </div>
+        <p>stretch</p>
+        <div class="container stretch column">
+            <div class="item">1</div>
+            <div class="item">teste 1 para ver se o resto cresce de acordo com o do meio</div>
+            <div class="item">3</div>
+        </div>
+
+        <p>flex-start</p>
+        <div class="container start column">
+            <div class="item">1</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+        </div>
+
+        <p>flex-end</p>
+        <div class="container end column">
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">3</div>
+        </div>
+        <p>baseline</p>
+        <div class="container baseline column">
+            <div class="item">grande teste maior ainda para ver se forma uma escada</div>
+            <div class="item">teste 1 para ver se o resto </div>
+            <div class="item">3</div>
+        </div>
+
+    </section>
+    <section>
+        <p>central</p>
+        <div class="container central center">
+            <div class="item">grande teste maior ainda para ver se forma no centro</div>
         </div>
     </section>
 </body>

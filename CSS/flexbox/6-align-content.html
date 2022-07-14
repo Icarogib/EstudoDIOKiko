@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align content</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            margin:0 auto;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: orange;
+            padding: 0 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+            margin: 5px;
+            <! border: 1px solid black; serve para apenas mostrar as bordas dos items-->
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <p>stretch</p>
+        <div class="container stretch">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+        <p>center</p>
+        <div class="container center">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+        <p>flex-start</p>
+        <div class="container flex-start">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+        <p>flex-end</p>
+        <div class="container flex-end">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+
+        <p>space-around</p>
+        <div class="container space-around">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+
+        <p>space-between</p>
+        <div class="container space-between">
+            <div class="item">um teste</div>
+            <div class="item">de escrita para ver</div>
+            <div class="item">o como se comporta este negocio</div>
+            <div class="item">enquanto nos colocamos em pratica</div>
+            <div class="item">o que aprendemos em aula</div>
+            <div class="item">e experimentamos tudo</div>
+            <div class="item">e fazemos a exemplificacao na ide html</div>
+        </div>
+    </section>
+</body>
+</html>
