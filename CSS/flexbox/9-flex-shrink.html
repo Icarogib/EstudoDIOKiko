@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            margin:0;
+        }
+
+        .item{
+            background-color: orange;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>flex shrink: 1</p>
+        <div class="container">
+            <div class="item s-1 fg-1">1</div>
+            <div class="item s-1 fg-1">2</div>
+            <div class="item s-1 fg-1">3</div>
+        </div>
+
+        <p>flex shrink: 1</p>
+        <div class="container">
+            <div class="item s-1 fg-1">1</div>
+            <div class="item s-1 fg-1">texto teste</div>
+            <div class="item s-1 fg-1">3</div>
+            <div class="item s-1 fg-1">3</div>
+            <div class="item s-1 fg-1">3</div>
+            <div class="item s-1 fg-1">3</div>
+        </div>
+        <p>flex shrink: 0/ basis: 100px</p>
+        <div class="container">
+            <div class="item s-0 fg-1">1</div>
+            <div class="item s-0 fg-1">texto teste</div>
+            <div class="item s-0 fg-1">3</div>
+            <div class="item s-0 fg-1">3</div>   <div class="item s-0 fg-1">3</div>
+        </div> 
+        <p>flex shrink: 3</p>
+        <div class="container">
+            <div class="item s-3 fg-1">1</div>
+            <div class="item s-3 fg-1">texto teste</div>
+            <div class="item s-3 fg-1">3</div>
+            <div class="item s-3 fg-1">3</div>   <div class="item s-0 fg-1">3</div>
+        </div> 
+        <p>flex shrink: 2/ basis: 100px</p>
+        <div class="container">
+            <div class="item s-2 fg-1">1</div>
+            <div class="item s-2 fg-1">texto teste</div>
+            <div class="item s-2 fg-1">3</div>
+            <div class="item s-2 fg-1">3</div>   <div class="item s-0 fg-1">3</div>
+        </div> 
+    </section>
+</body>
+</html>

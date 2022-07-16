@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex align</title>
+
+    <style>
+        .container{
+            display: flex;
+            min-width: 200px;
+            max-width: 450px;
+            border: 1px solid black;
+            margin:0;
+        }
+
+        .item{
+            background-color: orange;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <p>Align: Auto</p>
+        <div class="container">
+            <div class="item auto">12345</div>
+            <div class="item auto">ANBCASDF</div>
+            <div class="item auto">Teste de um texto qualquer na caixa</div>
+            <div class="item auto">abububle123</div>
+        </div>
+        <p>Align: flex start</p>
+        <div class="container">
+            <div class="item start">12345</div>
+            <div class="item start">ANBCASDF</div>
+            <div class="item start">Teste de um texto qualquer na caixa</div>
+            <div class="item start">abububle123</div>
+        </div>
+        <p>Align: center</p>
+        <div class="container">
+            <div class="item center">12345</div>
+            <div class="item center">ANBCASDF</div>
+            <div class="item center">Teste de um texto qualquer na caixa</div>
+            <div class="item center">abububle123</div>
+        </div>
+        <p>Align: flex end</p>
+        <div class="container">
+            <div class="item end">12345</div>
+            <div class="item end">ANBCASDF</div>
+            <div class="item end">Teste de um texto qualquer na caixa</div>
+            <div class="item end">abububle123</div>
+        </div>
+        <p>Align: Stretch</p>
+        <div class="container">
+            <div class="item stretch">12345</div>
+            <div class="item stretch">ANBCASDF</div>
+            <div class="item stretch">Teste de um texto qualquer na caixa</div>
+            <div class="item stretch">abububle123</div>
+        </div>
+        <p>Align: baseline</p>
+        <div class="container">
+            <div class="item baseline">12345</div>
+            <div class="item baseline">ANBCASDF</div>
+            <div class="item baseline">Teste de um texto qualquer na caixa</div>
+            <div class="item baseline">abububle123</div>
+        </div>
+        <p>Align: mix</p>
+        <div class="container">
+            <div class="item start">12345</div>
+            <div class="item end">ANBCASDF</div>
+            <div class="item baseline">Teste de um texto qualquer na caixa</div>
+            <div class="item center">abububle123</div>
+            <div class="item stretch">Mais um texto teste</div>
+        </div>
+    </section>
+</body>
+</html>
