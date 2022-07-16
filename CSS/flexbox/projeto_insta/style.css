@@ -1,0 +1,164 @@
+/*feito a partir da video aula dio, construi este codigo, junto com o
+ html, aproveitando apenas as fotos*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.cell-insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.cell-insta img{
+    height: 50rem;
+}
+
+.instagram-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.foto-perfil{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+
+.foto-perfil img{
+    height: 6rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+.getapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.3rem 0;
+   /* border: 1px  solid #000;*/
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+   /* border: 1px  solid rgb(185, 39, 39);*/
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+   /* border: 1px  solid rgb(219, 178, 178);*/
+}
+
+.app-download:nth-child(1){
+    background-image: url("img/apple-button.png");
+}
+
+.app-download:nth-child(2){
+    background-image: url("img/googleplay-button.png");
+}
+
+.group{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+.group:nth-child(1){
+    min-width: 19rem;
+}
+
+.login1{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout1{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160)
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .cell-insta{
+        display: none;
+    }
+
+    .instagram-login{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}
