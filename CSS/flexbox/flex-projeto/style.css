@@ -107,3 +107,70 @@ header .menu{
     margin-bottom: 10px;
     width: 90%;
 }
+
+#quem-somos img{
+    min-width: 420px;
+}
+
+.container-ext{
+    background-color: #122a57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2{
+    color:#fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 10px;
+}
+
+.list-serv{
+    display:flex;
+    justify-content: space-around;
+}
+
+.list-serv .item-serv{
+    text-align: center;
+}
+
+.item-serv a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #122a57;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.item-serv p{
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item-serv img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.list-plan{
+    display:flex;
+}
