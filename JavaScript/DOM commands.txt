@@ -1,0 +1,9 @@
+DOM
+
+>document.getElementsByTagName('h1')[indice a ser acessado]
+
+<indice(lugar na lista): h1
+	       tamanho: x
+
+>variável.style (muda o css).
+variavel.style.color = 'red' (muda para vermelho)

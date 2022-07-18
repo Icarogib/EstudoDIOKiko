@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exemplo de Evento DOM</title>
+
+<style>
+#t { border: 1px solid red }
+#t1 { background-color: pink; }
+</style>
+
+<script>
+//exemplo removido de https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener
+//em 18/07/2022
+
+// Função para mudar o conteúdo de t2
+function modifyText(new_text) {
+  var t2 = document.getElementById("t2");
+  t2.firstChild.nodeValue = new_text;
+}
+
+// Função para adicionar uma espera de evento em t
+function load() {
+  var el = document.getElementById("t");
+  el.addEventListener("click", function(){modifyText("four")}, false);
+}
+</script>
+
+</head>
+<body onload="load();">
+
+<table id="t">
+  <tr><td id="t1">one</td></tr>
+  <tr><td id="t2">two</td></tr>
+</table>
+
+</body>
+</html>
