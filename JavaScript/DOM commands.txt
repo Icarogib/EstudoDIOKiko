@@ -5,5 +5,7 @@ DOM
 <indice(lugar na lista): h1
 	       tamanho: x
 
+>var variavel = comando
+
 >variável.style (muda o css).
 variavel.style.color = 'red' (muda para vermelho)
