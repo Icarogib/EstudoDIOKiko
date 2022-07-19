@@ -54,7 +54,7 @@ $  git remote -v - mostra onde seu GIT atual está apontando (repositório remot
 
 $  git push origin master/main - envia seu repositório local para o repositório remoto.
 
-$  git restore nomeArquivo - Discarta modificacoes antes de ir ao staged area.
+$  git restore nomeArquivo - Descarta modificacoes antes de ir ao staged area.
 
 $  git restore --staged nomeArquivo - remove da staged area (a area antes do commit).
 
