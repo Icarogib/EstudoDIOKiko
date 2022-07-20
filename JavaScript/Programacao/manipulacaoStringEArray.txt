@@ -15,8 +15,11 @@ string.includes("palavra") - retorna se a string possui a palavra
 
 string.replace("!", "X") - substitui ! por X na string
 
+
 tudo isso é necessario atribuir a uma variavel
 
+
+Array:
 
 var array =[] - declara um array
 
@@ -32,7 +35,29 @@ array.length - tamanho do array
 
 array.reverse - reverte o array, o ultimo vira o primeiro, e o primeiro o ultimo
 
+funcao(...constante) - cada valor se torna independente, se um array de [1, 2, 3] recebe
+ 			... entao, eh passado na funcao 1, 2 e 3 separadamente.
+			resumindo, joga apenas os elementos de dentro para onde vc quer;
+
+
+This e manipulando:
+
+funcao.call(constante); - faz a funcao com os valores dentro de constante.
+
+funcao.call(constante, a, b) - passa os valores da funcao, mais os de dentro de a e b.
+
+
+funcao.apply(constante) - mesmo que o call, porem a diferenca eh na hora de passar argumentos.
+
+funcao.apply(constante, [a, b]) - para passar argumentos eh necessario passar em um array, ao inves de virgula para separa-lo.
+
+
+let variavel = funcao.bind({ propriedade: 'valor' }) - clona a funcao, e utiliza o valor passado no valor.
 
 
 Extra: 
 var.join("texto"); - junta o texto em cada separacao de uma string
+
+function confTam (..args){
+	console.log(args.length) = retorna quantos parametros foram passados em uma funcao
+}
