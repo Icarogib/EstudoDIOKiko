@@ -1,0 +1,38 @@
+string.concat(outraString) - soma as duas strings
+ou
+string.concat(" teste") - soma teste na string
+ou
+string = nome + " " + outroNome - faz a nova string
+ou
+string = '${nome} ${outroNome}
+
+
+split - separa os argumentos da string
+string.split("") - separa tudo (transforma tudo em um array)
+string.split("!") - separa apenas entre as exclamacoes
+
+string.includes("palavra") - retorna se a string possui a palavra
+
+string.replace("!", "X") - substitui ! por X na string
+
+tudo isso é necessario atribuir a uma variavel
+
+
+var array =[] - declara um array
+
+array.push(x) - coloca x dentro do array
+
+array.pop() - retira o ultimo valor colocado no array
+
+array.shift() - remove o primeiro elemento do array
+
+array.unshift(z) - coloca z no primeiro elemento do array
+
+array.length - tamanho do array
+
+array.reverse - reverte o array, o ultimo vira o primeiro, e o primeiro o ultimo
+
+
+
+Extra: 
+var.join("texto"); - junta o texto em cada separacao de uma string
