@@ -52,7 +52,12 @@ $  git remote add origin linkGitHub - coloca o repositório que vamos alterar.
 
 $  git remote -v - mostra onde seu GIT atual está apontando (repositório remoto).
 
-$  git push origin master/main - envia seu repositório local para o repositório remoto.
+$  git push origin master/main - envia seu repositório local para o repositório remoto da parte principal.
+
+$  git push origin nomeBranch - envia um galho de seu rep. local para o repositório remoto, você precisa dar merge (juntar) com o principal,
+				geralmente isso eh feito no GITHUB com um Pull Request.
+
+$  git merge nomeBranch - da merge na branch escolhida e a main/master
 
 $  git restore nomeArquivo - Descarta modificacoes antes de ir ao staged area.
 
@@ -74,5 +79,3 @@ $  git branch -a  - mostra todas as branches e remotos atuais que você possui n
 $  git branch --list - mostra so os branches locais
 
 $  git branch -d nomeBranch - deleta aquela branch.
-
-$  git merge nomeBranch - da merge na branch escolhida e a main/master
