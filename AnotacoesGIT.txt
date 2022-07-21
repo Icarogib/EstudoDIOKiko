@@ -69,6 +69,9 @@ $  git checkout -b nomeNovaBranch - Cria uma nova branch com aquele nome, isso c
 
 $  git checkout nomeBranch - troca para a branch que voce colocar o nome.
 
-$  git branch -a  - mostra todas as branches atuais que você possui no seu git.
+$  git branch -a  - mostra todas as branches e remotos atuais que você possui no seu git.
+ ou
+$  git branch --list - mostra so os branches locais
 
+$  git branch -d nomeBranch - deleta aquela branch.
 
