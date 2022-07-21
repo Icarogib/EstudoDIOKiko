@@ -75,3 +75,4 @@ $  git branch --list - mostra so os branches locais
 
 $  git branch -d nomeBranch - deleta aquela branch.
 
+$  git merge nomeBranch - da merge na branch escolhida e a main/master
