@@ -55,6 +55,42 @@ funcao.apply(constante, [a, b]) - para passar argumentos eh necessario passar em
 let variavel = funcao.bind({ propriedade: 'valor' }) - clona a funcao, e utiliza o valor passado no valor.
 
 
+Map, ForEach, filter
+
+map - Percorre o array e executa uma função em cada um de seus itens
+const array = [1, 2, 3, 4, 5]; - cria array;
+
+array.map((item) => item * 2); //duplica cada elemento do array. Usando arrow function para passar a funcao callback.
+array.map(callback, thisArg) - base map; //retorna sempre um novo array				
+
+foreach - retorno: o método map retorna um array, enquanto forEach retorna “undefined”
+array.forEach(callback, thisArg) - base foreach;
+array.forEach((item) => item * 2)// Retorna undefined, para receber esse valor, necessita de uma variavel exterior (const ou var)
+
+
+const frutas = ['maçã fuji', 'maçã verde', 'laranja', abacaxi'];
+
+frutas.filter((fruta) => fruta.includes('maçã')); //retorna: ['maçã fuji', 'maçã verde']; 
+			Percorre um array e retorna outro contendo apenas os itens que passaram por determinada validação
+			sempre retorna um novo array
+
+array.filter(callback, thisArg) - base filter;
+
+
+-Reduce:
+Percorre um array e acumula o valor de cada operação para retornar um valor único no final
+retorna apenas um valor.
+
+
+array.reduce(callbackFn, initialValue) - base
+
+const callbackFn = function(accumulator, currentValue, index, array)
+		//acumulador todas as chamadas do callback
+		//currentValue eh o elemento atual acessado pela função
+
+
+
+
 Extra: 
 var.join("texto"); - junta o texto em cada separacao de uma string
 
