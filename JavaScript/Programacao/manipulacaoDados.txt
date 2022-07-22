@@ -89,6 +89,83 @@ const callbackFn = function(accumulator, currentValue, index, array)
 		//currentValue eh o elemento atual acessado pela função
 
 
+Errors: 
+
+new Error(message, fileName, lineNumber) - base da estrutura de erro.
+
+//todos os parametros sao opcionais
+
+const MeuErro = new Error('Mensagem Inválida');
+//se quiser mudar o nome do erro: MeuErro.name = 'InvalidMessage';
+
+throw MeuErro;
+
+
+usando throw: 
+if (algo) throw "qualquer coisa";
+
+try e Catch:
+
+function tryCatchEx(string) {
+	try{
+		funcao(string) //que possui o thow
+	}
+	catch(e){
+		console.log(e);
+//ou usa throw e;
+	}
+}
+
+finally:
+colocar finally {
+faz algo}
+apos o try e catch, faz esse algo de todo jeito apos o erro.
+
+
+Assincrono:
+Promises>
+
+const myPromise = new Promise ((resolve, reject) => {
+	window.setTimeout(() =>{
+		resolve('Resolvida');
+	}, 3000);
+});
+
+await myPromise
+	.then((result) => result + ' passando pelo then')
+	.then((result) => result + ' e agora acabou!')
+	.catch((err) => console.log(err.message));
+
+//apos 2 seg, ira retornar o valor.
+// "Resolvida passando pelo then e agora acabou!"
+
+
+Async/await:
+
+async function resolvePromise(){
+	funcao de cima...
+	...
+	const resolved = await myPromise ...
+	...
+	return resolved;
+}
+
+//possivel utilizar try...catch no await.
+
+
+Fetch e api
+
+fetch(url, options)
+	.then(response => response.json())
+	.then(json => console.log(json))
+//retorna uma promise
+
+fetch('https://endereco-api.com/', {
+	method: 'GET', //method: 'POST'/'PUT'/'DELETE'
+	cache: 'no-cache',
+	body:JSON.stringify(data)
+})
+.then.....por ai vai
 
 
 Extra: 
@@ -97,3 +174,7 @@ var.join("texto"); - junta o texto em cada separacao de uma string
 function confTam (..args){
 	console.log(args.length) = retorna quantos parametros foram passados em uma funcao
 }
+
+if(typeof arr !== 'object/number/outracoisa') - compara com o tipo
+
+typeof operando - O operador typeof retorna uma string indicando o tipo de um operando.
