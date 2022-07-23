@@ -1,0 +1,74 @@
+Classes: 
+
+basicamente a classe em JS eh um objeto.
+mas feito de uma forma para ser classificado de classe
+
+sintaxe -
+
+class Type {
+	constructor (type = 'object') {
+		this.type = type
+	}
+	
+	function/action(){
+		return 'something';
+	}
+}
+
+
+utilizar super(type, type2)
+no constructor da classe utiliza os valores passados
+para a classe pai.
+
+utilizar extends na classe utiliza a classe pai, por exemplo
+classe pai -> type
+
+então para a classe filha, se coloca
+
+class typeSon extends type{
+	constructor (type){
+		super(type);
+	}
+}
+
+
+Módulos:
+
+formas para exportar uma funcao - 
+
+export function nomeFuncao(parametro){
+	return 'algo';
+};
+
+ou se a funcao ja estiver feita:
+
+export {
+	funcao1,
+	funcao2,
+	funcao3
+}
+
+e default -> apenas um default pode ser exportado.
+
+export default nomeFuncao;
+
+
+importando funcoes:
+
+import {funcao, variavel, classe} from './arquivo.js'
+
+
+import { arquivo as Apelido } from './arquivo.js';
+Apelido.metodo();
+
+import * as INFOS from './arquivo.js'
+
+
+default exports:
+
+import valorDefault from './arquivo.js'
+
+
+vinculando ao HTML:
+
+<script type="module" src=".main.js"></script>
