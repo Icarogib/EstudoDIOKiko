@@ -20,7 +20,7 @@ pega todos os elementos da lista, como section, body etc.
 >document.getElementsByClassName('textos');
 retorna todos as classes de nome titulo
 
->document.querySelectorAll('.classe .classe2');
+>document.querySelectorAll('.classe .classe2 #id');
 retorna todas as que possuem as duas classes, as duas,
 ou
 >document.querySelectorAll('.classe li');
@@ -49,6 +49,10 @@ meuElement.classList.remove("classe");
 meuElement.classList.toggle("dark-mode");
 //Adiciona classe dark-mode, caso ela nao faca parte da lista, 
 e remove caso faca
+
+meuElement.classList.contains("dark-mode");
+//verifica se existe a classe dark-mode
+
 
 ai o codigo html fica assim:
 

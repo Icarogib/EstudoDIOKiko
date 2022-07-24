@@ -1,0 +1,10 @@
+function nomeFuncao (a: tipo, b: tipo) - esse : tipo, ja
+faz uma verificacao se o parametro eh daquele tipo.
+Se nao for, nao eh utilizado;
+
+interface e types
+
+a interface serve como uma classe para objetos, onde voce faz 
+os objetos com suas caracteristicas.
+
+o type serve para "juntar" ou fazer algo com as interfaces
