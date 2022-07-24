@@ -79,3 +79,7 @@ $  git branch -a  - mostra todas as branches e remotos atuais que você possui n
 $  git branch --list - mostra so os branches locais
 
 $  git branch -d nomeBranch - deleta aquela branch.
+
+$  git push nomeRemoto :nomeBranch - deleta aquela branch no rep. remoto
+$  git push -d <remote_name> <branchname> - tambem
+$ git push <remote_name> --delete <branch_name> - mesma coisa
