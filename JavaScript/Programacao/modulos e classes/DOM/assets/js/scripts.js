@@ -6,5 +6,5 @@ const myFooter = document.getElementsByTagName('footer')[0];
 modeButton.addEventListener('click', changeMode);
 
 function changeMode(){
-	console.log('Cliquei!');
+	changeClasses();
 }
