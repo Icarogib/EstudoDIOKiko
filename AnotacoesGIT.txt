@@ -34,9 +34,11 @@ $  git config --list - mostra todas config.
 $  git config --global --unset user.email
 $  git config --global --unset user.name
 
+
 	-> Historico:
 
 $  git log --graph - mostra o grafico de como foi o historico de mudancas.
+
 
 	-> Repositórios e outros:
 
