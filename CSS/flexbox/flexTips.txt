@@ -1,0 +1,13 @@
+align-items alinha as coisas da esquerda, pro centro, pra direita.
+flex-start, center, flex-end. respectivamente
+
+justify-content aline na vertical, em cima, embaixo ou no meio.
+flex-start, flex-end, center.
+
+flex-direction: row ---->
+ |column 
+ |
+ | 
+\ /
+
+text-align: alinhamento do texto, centro, esquerda, direita.

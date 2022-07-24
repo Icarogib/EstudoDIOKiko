@@ -9,3 +9,74 @@ DOM
 
 >variável.style (muda o css).
 variavel.style.color = 'red' (muda para vermelho)
+
+
+>document.getElementById('titulo')/
+retorna o titulo, o unico com aquele ID
+
+>document.getElementByTagName('li');
+pega todos os elementos da lista, como section, body etc.
+
+>document.getElementsByClassName('textos');
+retorna todos as classes de nome titulo
+
+>document.querySelectorAll('.classe .classe2');
+retorna todas as que possuem as duas classes, as duas,
+ou
+>document.querySelectorAll('.classe li');
+retorna a lista que possui essa classe
+
+>document.createElement(element) - cria novo elemento HTML
+>document.removeChild(element) - remove elemento
+>document.appendChild(element) - adiciona elemento dentro de outro
+>document.replaceChild(new, old) - substitui elemento
+
+Classes:
+	exemplo_:
+<html
+<div id="meu-elemento" class="classe">
+</div>
+
+<java
+const meuElement = document.getElementById("meu-elemento");
+
+meuElement.classList.add("novo-estilo");
+//adiciona a classe "novo-estilo"
+
+meuElement.classList.remove("classe");
+//remove a classe "classe"
+
+meuElement.classList.toggle("dark-mode");
+//Adiciona classe dark-mode, caso ela nao faca parte da lista, 
+e remove caso faca
+
+ai o codigo html fica assim:
+
+<div id="meu-elemento" class="novo-estilo dark-mode">
+</div>
+
+para mudar direto no CSS, voce faz assim:
+
+document.getElementsByTagName("p").style.color = "blue";
+//muda a cor do paragrafo para azul
+
+
+
+Eventos:
+
+event listener -
+
+const botao = document.getElementById("meuBotao");
+
+botao.addEventListener("click", outraFuncao);
+//no clique, ele faz algo
+
+no HTML - 
+
+BODY
+<h1 onclick="funcao(this)">Clique aqui!</h1>
+
+script
+	function funcao(id){
+	id.innerHTML = "Mudei!";
+}
