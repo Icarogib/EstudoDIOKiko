@@ -70,7 +70,8 @@ $  git pull origin master/main - Quando há problemas de merging (diferentes mod
 					 ====== é onde a do outro arquivo é diferente).
 
 
-$  git checkout -b nomeNovaBranch - Cria uma nova branch com aquele nome, isso cria um pull request quando você quer enviar para seu repositório remoto.
+$  git checkout -b nomeNovaBranch - Cria uma nova branch com aquele nome e te joga la,
+				 isso cria um pull request quando você quer enviar para seu repositório remoto.
 
 $  git checkout nomeBranch - troca para a branch que voce colocar o nome.
 
