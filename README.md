@@ -10,7 +10,8 @@ Até agora ja vi: <br />
 - HTML, com uma pasta própria para o conteúdo. <br />
 - CSS, também com uma pasta própria. <br />
 - CSS Flexbox. <br />
+- Javascript.<br />
 
 Estou vendo:<br />
 
-- Javascript.<br />
+- TypeScript <br />
