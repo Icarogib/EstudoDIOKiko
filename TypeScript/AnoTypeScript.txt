@@ -8,18 +8,11 @@ npm install typescript - instala TS
 
 npm install lite-server - teste server live
 
-npm start - inicia o projeto, para rodar com lite server, se coloca no 
+npm start - inicia o projeto, para rodar com lite server, e watch, se coloca no 
 scripts json: 
 $  "start": "lite-server",
-
+"watch": "tsc --watch"
 
 tsc --init - cria um arquivo configuracao TS.
 
-para colocar o watch no script (qualquer mudanca ele atualiza e cria .js)
-
-"watch": "tsc --watch"
-
 para rodar -> npm run watch
-
-
-

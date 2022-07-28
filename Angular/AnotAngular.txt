@@ -1,0 +1,72 @@
+npm install -g @angular/cli - instala o angular.
+
+npm install bootstrap - aplicativo 
+
+
+ng new nomeProjeto - cria um projeto com o nome desejado.
+
+ng serve --open - na pasta do projeto, roda a aplicacao
+
+<br /> break de linha, pula a linha
+
+
+input HTML em angular>
+
+<input [ngModel]="nomePropriedade" name="name">
+
+[ngModel] - utilizado em inputs, formularios, e é da biblioteca
+que precisa ser importada em app.module.ts 
+-> import { FormsModule } from '@angular/forms';
+
+e adicionar em imports:
+	FormsModule,
+
+quando voce quer apenas mostrar sem atualizar, se utiliza apenas um
+colchetes [ngModel] - one way
+
+quando quer para atualizar (voce escreve e ele muda) se coloca
+[(ngModel)] - two way
+
+
+criar um arquivo nome.component.ts - cria um componente que deve ter essa cara:
+
+import { Component } from "@angular/core";
+
+@Component({
+    selector: 'app-course-list',
+    templateUrl: './course-list.component.html', -> essa linha aqui, pode ser template: '<h2>algo</h2>'
+							mas nao eh aconselhavel misturar html com ts.
+})
+
+export class NomeSeuComponent {     
+	nome: string;
+	blabla: number;
+	...por ai vai
+}
+
+
+listas em angular:
+
+<table class="table table-striped"> //tipo de tabela vai ser listrinhas
+	<thead>
+		<tr>
+  	          <th>Image</th>
+  	          <th>Name</th>
+  	          <th>Code</th>
+   	         <th>Price</th>
+   	         <th>Release Date</th>
+   	          <th>Rating</th>
+		</tr>
+	</thead>
+    <tbody>
+        <tr *ngFor="let courses of course">
+            <td>{{ courses.imageUrl }}</td>
+            <td>{{ courses.name }}</td>
+            <td>{{ courses.code }}</td>
+            <td>{{ courses.price }}</td>
+            <td>{{ courses.releaseDate }}</td>
+            <td>{{ courses.rating }}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
