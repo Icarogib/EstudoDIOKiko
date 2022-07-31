@@ -70,3 +70,6 @@ listas em angular:
         </tr>
     </tbody>
 </table>
+
+
+node serve.js - cria server via cmd
