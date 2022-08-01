@@ -1,9 +1,14 @@
 npm install -g @angular/cli - instala o angular.
 
-npm install bootstrap - aplicativo 
+npm install bootstrap - aplicativo ~
+
 
 
 ng new nomeProjeto - cria um projeto com o nome desejado.
+
+ng add @angular/material - adiciona a biblioteca material do angular.
+
+ng g c nomeCOmponente - g- generate c - component, Gera um componente com tudo feito.
 
 ng serve --open - na pasta do projeto, roda a aplicacao
 
@@ -49,7 +54,7 @@ listas em angular:
 
 <table class="table table-striped"> //tipo de tabela vai ser listrinhas
 	<thead>
-		<tr>
+		<tr> //adicionar *ngIf="nomeQlqr" se quiser que ele seja com alguma verificacao
   	          <th>Image</th>
   	          <th>Name</th>
   	          <th>Code</th>
