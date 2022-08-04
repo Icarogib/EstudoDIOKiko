@@ -1,7 +1,7 @@
 npm install -g @angular/cli - instala o angular.
 
 npm install bootstrap - aplicativo ~
-
+" kde_modules/bootstrap/dist/css/bootstrap.min.css ", - em styles angular.json
 
 
 ng new nomeProjeto - cria um projeto com o nome desejado.
@@ -9,6 +9,8 @@ ng new nomeProjeto - cria um projeto com o nome desejado.
 ng add @angular/material - adiciona a biblioteca material do angular.
 
 ng g c nomeCOmponente - g- generate c - component, Gera um componente com tudo feito.
+
+ng g d nomeDiretiva - gera diretiva d- directive
 
 ng serve --open - na pasta do projeto, roda a aplicacao
 
@@ -78,3 +80,36 @@ listas em angular:
 
 
 node serve.js - cria server via cmd
+
+
+
+*ngIf - condicao, faz algo.
+
+*ngIf="count > 7"; else menor" - se count for maior que 7, faz uma coisa.
+				se for menor, ele faz algo do template abaixo.
+
+<ng-template #menor>
+	faz algo
+</ng-template>
+
+
+*ngFor - percorre um array, para demonstrar algo, {{ objeto }}
+*ngFor="let objeto of listaObj" -> percorre
+
+o {{ objeto.Propriedade }} -> mostra a propriedade do objeto
+
+
+[ngSwitch] - se for algo da lista, aparece o selecionado, se nao, o default.
+
+
+Para mandar algo do typescript pro HTML, colchetes
+Para mandar algo do HTML pro typescript, parenteses
+
+Two way, manda dos dois lados, [( ngModel )] = "nomeVar"
+para exibir {{ nomeVar }}
+
+quando quer mostrar propriedade, dentro de chaves
+mostrar o valor, chaves duplas
+
+
+pipes servem para formatacao de textos, numeros e etc (ex: deixar tudo maiusculo, separar por virgula, data yyyy/dd/mm etc)
