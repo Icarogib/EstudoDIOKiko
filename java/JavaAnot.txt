@@ -1,0 +1,105 @@
+Esta parte do estudo vai ficar prejudicada, estou com pressa para o término.
+
+pesquisar: java.util
+java.util.set e outros
+java.util.Map
+STREAM API java
+Collections Java
+Error/Unchecked (runtime)/Checked Exception
+flush, close
+try, catch, throw, finally, JOptionPane
+filereader
+Thread.dumpStack();
+debug ide Intellij
+interface
+
+
+Scanner scan = new Scanner(System.in); - recebe leitura do teclado.
+
+variavel = scan.next(); - recebe alguma coisa
+variavel = scan.nextInt(); - recebe int
+
+variavel.toString(); transforma a variavel em string
+
+System.out.println(); - printa algo
+
+variavel.equals("algumaCoisa") - comparacao ===
+
+
+public class nomeClasse{ - base estrutural
+}
+
+public static void main (String[] args){ - base main.
+}
+
+
+int[] array = {1, 2, 3, 4, 5}; - cria um array
+
+array.length - tamanho do vetor
+
+
+variavel.equalsIgnoreCase(String a) - true se variavel for igual a 'string a'
+
+String[] arrayString = new String[numero]. - cria array de tal tamanho
+
+
+for ( Type elemento : array ) {    - cada elemento dentro desse array, imprima o valor dentro. 
+	System.out.println(elemento);
+}
+
+
+Random random = new Random(); -cria um valor randomico
+
+
+
+Lists:
+
+iniciar um list - 
+List<Double> variavel = new ArrayList<Double>();
+
+adicionando:
+
+variavel.add(valor) - adiciona valor do mesmo tipo.
+variavel.add(i:posicao, e:elemento) - adiciona o elemento naquela posicao.
+variavel.set(int i, Double e) - substitui o valor na posicao i pelo valor e
+variavel.contains( valor ) - verifica se possui um valor dentro da lista
+variavel.get(posicao) - retorna a nota naquela posicao
+variavel.size() - retorna o tamanho da lista
+variavel.remove(int i) - remove o valor da lista na posicao i
+variavel.clear() - apaga tudo dentro da lista
+variavel.isEmpty() - retorna se esta vazia ou nao
+variavel.shuffle(lista) - reordena a lista.
+
+Collections.min(lista) - retira o menor numero de dentro da lista.
+Collections.max(lista) - retira o maximo numero de dentro da lista.
+Collections.sum(lista) - soma tudo.
+ou
+Iterator<tipo> iterator = notas.iterator();
+while(iterator.hasNext()){
+	Double next = iterator.next();
+	soma+= next;
+}  						- soma tudo
+
+Iterator<tipo> iterator = notas.iterator();
+while(iterator1.hasNext()){
+	Double next = iterator1.next();
+	if(comparacao) iterator.remove()		-remove valores que passam na comparacao ( x < 7 )
+}  		
+
+Collections.sort(lista); -> organiza a lista
+
+criando uma classe (objeto)
+
+class Gato {
+	private String nome;
+	private Integer idade;
+	private String cor;
+
+	public Gato (String nome, Integer idade, String cor) {
+		this.nome = nome;
+		this.idade = idade;
+		this.cor = cor;
+	}
+	//get e setters como C++ e C;
+}	
+
