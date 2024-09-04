@@ -12,6 +12,7 @@ filereader
 Thread.dumpStack();
 debug ide Intellij
 interface
+protocolos de comunicacao na internet (http, https, SSL, webSocket...)
 
 
 Scanner scan = new Scanner(System.in); - recebe leitura do teclado.

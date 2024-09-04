@@ -90,3 +90,10 @@ $  git branch -d nomeBranch - deleta aquela branch.
 $  git push nomeRemoto :nomeBranch - deleta aquela branch no rep. remoto
 $  git push -d <remote_name> <branchname> - tambem
 $  git push <remote_name> --delete <branch_name> - mesma coisa
+
+
+$ git log --graph --oneline --all    - mostra os commits antigos
+
+$ git reset --hard HEAD^  - remove o ultimo commit ou HEAD~1 (ou numero de vezes ou substituir HEAD pelo codigo do commit)
+
+$ git request-pull origin/master feature/awesomeFeature   - pede um pull request (não testado)
