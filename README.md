@@ -8,10 +8,15 @@ Até agora ja vi: <br />
 
 - GIT, anotações na pasta principal. <br />
 - HTML, com uma pasta própria para o conteúdo. <br />
-- CSS, também com uma pasta própria. <br />
+- CSS3, também com uma pasta própria. <br />
 - CSS Flexbox. <br />
-- Javascript.<br />
-
-Estou vendo:<br />
-
+- Node.js  <br />
+- Javascript <br />
+- Angular <br />
 - TypeScript <br />
+
+atualização após o término:
+Dado o final corrido do curso, não foi possivel enviar codigos do angular e outros, apenas parciais.
+
+é necessário utilizar npm init, npm install na maioria.
+também pesquise sobre angular para fazer os projetos rodarem.
