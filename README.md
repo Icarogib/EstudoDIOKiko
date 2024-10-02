@@ -17,6 +17,7 @@ Até agora ja vi: <br />
 
 atualização após o término:
 Dado o final corrido do curso, não foi possivel enviar codigos do angular e outros, apenas parciais.
+Há códigos e páginas (como por exemplo a biblioteca E-Book feita no ultimo módulo) que se perderam.
 
 é necessário utilizar npm init, npm install na maioria.
 também pesquise sobre angular para fazer os projetos rodarem.
